@@ -12,6 +12,7 @@ import 'package:sampledata/download/ui/download_screen.dart';
 import 'package:sampledata/paidUserHandle/ui/user_Call.dart';
 import 'package:sampledata/progress_bar/progress_bar.dart';
 import 'package:sampledata/stack_learn.dart';
+import 'package:sampledata/travel_ui/screens/home_ui.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -24,7 +25,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Design(),
+      home:TravelUi(),
     );
   }
 }
