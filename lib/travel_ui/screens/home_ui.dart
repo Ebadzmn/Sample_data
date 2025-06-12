@@ -49,126 +49,140 @@ class _TravelUiState extends State<TravelUi> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Stack(
-                    children: [
-                      Container(
-                        height: 250,
-                        width: 230,
-                        color: Colors.black,
-                        child: ShaderMask(
-                          shaderCallback: (Rect bounds ) {
-                            return LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.grey.withOpacity(0.9),
-                                  Colors.transparent
-                                ]).createShader(bounds);
-                          }, blendMode: BlendMode.dstIn,child: Image.network('https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG91cmlzdCUyMGF0dHJhY3Rpb258ZW58MHx8MHx8fDA%3D',fit: BoxFit.cover,),),
-                      ),
-                      Positioned(
-                          top: 8,
-                          left: 180,
-                          child: Container(
-                            height: 35,
-                            width: 35,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                color: Colors.white
+                  Container(
+                    height: 420,
+                    width: 240,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 230,
+                              color: Colors.white,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: ShaderMask(
+                                  shaderCallback: (Rect bounds ) {
+                                    return LinearGradient(
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter,
+                                        colors: [
+                                          Colors.grey.withOpacity(0.9),
+                                          Colors.transparent
+                                        ]).createShader(bounds);
+                                  }, blendMode: BlendMode.dstIn,child: Image.network('https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG91cmlzdCUyMGF0dHJhY3Rpb258ZW58MHx8MHx8fDA%3D',fit: BoxFit.cover,),),
+                              ),
                             ),
-                            child: Icon(Icons.favorite,color: Colors.red,),
-                          )),
-                      Positioned(
-                          top: 210,
-                          child: Row(
-                            children: [
-                              Icon(Icons.star,color: Colors.blue,),
-                              Text('4.5/5.0',style: TextStyle(color: Colors.white),),
-                              Text('(40,000)',style: TextStyle(color: Colors.grey),),
-                            ],
-                          )),
-                    ],
+                            Positioned(
+                                top: 8,
+                                left: 180,
+                                child: Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: Colors.white
+                                  ),
+                                  child: Icon(Icons.favorite,color: Colors.red,),
+                                )),
+                            Positioned(
+                                top: 210,
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.star,color: Colors.blue,),
+                                    Text('4.5/5.0',style: TextStyle(color: Colors.white),),
+                                    Text('(40,000)',style: TextStyle(color: Colors.grey),),
+                                  ],
+                                )),
+                            Positioned(
+                              top: 280,
+                              child: Column(
+                                children: [
+                                  Text('Name of Distance',style: TextStyle(color: Colors.blue),)
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                        SizedBox(height: 20,),
+                        Text('Name of Distance',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 10,),
+                        Text('Travel is the movement of people between, bicycle, automobile, train, boat, bus, airplane, ship or other means.',style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400),),
+                        SizedBox(height: 8,),
+                        Text('Start from 500BDT / day',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                      ],
+                    ),
                   ),
-                  Stack(
-                    children: [
-                      Container(
-                        height: 250,
-                        width: 230,
-                        color: Colors.black,
-                        child: ShaderMask(
-                          shaderCallback: (Rect bounds ) {
-                            return LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.grey.withOpacity(0.9),
-                                  Colors.transparent
-                                ]).createShader(bounds);
-                          }, blendMode: BlendMode.dstIn,child: Image.network('https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG91cmlzdCUyMGF0dHJhY3Rpb258ZW58MHx8MHx8fDA%3D',fit: BoxFit.cover,),),
-                      ),
-                      Positioned(
-                          top: 8,
-                          left: 180,
-                          child: Container(
-                            height: 35,
-                            width: 35,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                color: Colors.white
+                  SizedBox(width: 20,),
+                  Container(
+                    height: 420,
+                    width: 240,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 230,
+                              color: Colors.white,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: ShaderMask(
+                                  shaderCallback: (Rect bounds ) {
+                                    return LinearGradient(
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter,
+                                        colors: [
+                                          Colors.grey.withOpacity(0.9),
+                                          Colors.transparent
+                                        ]).createShader(bounds);
+                                  }, blendMode: BlendMode.dstIn,child: Image.network('https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG91cmlzdCUyMGF0dHJhY3Rpb258ZW58MHx8MHx8fDA%3D',fit: BoxFit.cover,),),
+                              ),
                             ),
-                            child: Icon(Icons.favorite,color: Colors.red,),
-                          )),
-                      Positioned(
-                          top: 210,
-                          child: Row(
-                            children: [
-                              Icon(Icons.star,color: Colors.blue,),
-                              Text('4.5/5.0',style: TextStyle(color: Colors.white),),
-                              Text('(40,000)',style: TextStyle(color: Colors.grey),),
-                            ],
-                          )),
-                    ],
+                            Positioned(
+                                top: 8,
+                                left: 180,
+                                child: Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: Colors.white
+                                  ),
+                                  child: Icon(Icons.favorite,color: Colors.red,),
+                                )),
+                            Positioned(
+                                top: 210,
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.star,color: Colors.blue,),
+                                    Text('4.5/5.0',style: TextStyle(color: Colors.white),),
+                                    Text('(40,000)',style: TextStyle(color: Colors.grey),),
+                                  ],
+                                )),
+                            Positioned(
+                              top: 280,
+                              child: Column(
+                                children: [
+                                  Text('Name of Distance',style: TextStyle(color: Colors.blue),)
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                        SizedBox(height: 20,),
+                        Text('Name of Distance',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 10,),
+                        Text('Travel is the movement of people between, bicycle, automobile, train, boat, bus, airplane, ship or other means.',style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400),),
+                        SizedBox(height: 8,),
+                        Text('Start from 500BDT / day',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
+                      ],
+                    ),
                   ),
-                  Stack(
-                    children: [
-                      Container(
-                        height: 250,
-                        width: 230,
-                        color: Colors.black,
-                        child: ShaderMask(
-                          shaderCallback: (Rect bounds ) {
-                            return LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.grey.withOpacity(0.9),
-                                  Colors.transparent
-                                ]).createShader(bounds);
-                          }, blendMode: BlendMode.dstIn,child: Image.network('https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG91cmlzdCUyMGF0dHJhY3Rpb258ZW58MHx8MHx8fDA%3D',fit: BoxFit.cover,),),
-                      ),
-                      Positioned(
-                          top: 8,
-                          left: 180,
-                          child: Container(
-                            height: 35,
-                            width: 35,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                color: Colors.white
-                            ),
-                            child: Icon(Icons.favorite,color: Colors.red,),
-                          )),
-                      Positioned(
-                          top: 210,
-                          child: Row(
-                            children: [
-                              Icon(Icons.star,color: Colors.blue,),
-                              Text('4.5/5.0',style: TextStyle(color: Colors.white),),
-                              Text('(40,000)',style: TextStyle(color: Colors.grey),),
-                            ],
-                          )),
-                    ],
-                  ),
+
                 ],
               )
             )
@@ -178,5 +192,3 @@ class _TravelUiState extends State<TravelUi> {
     );
   }
 }
-
-
