@@ -9,6 +9,7 @@ import 'package:sampledata/api/sample2.dart';
 import 'package:sampledata/api/semple.dart';
 import 'package:sampledata/design.dart';
 import 'package:sampledata/download/ui/download_screen.dart';
+import 'package:sampledata/firebase_data/wrapper.dart';
 import 'package:sampledata/paidUserHandle/ui/user_Call.dart';
 import 'package:sampledata/progress_bar/progress_bar.dart';
 import 'package:sampledata/stack_learn.dart';
@@ -25,7 +26,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:TravelUi(),
+      home:Wrapper(),
     );
   }
 }
